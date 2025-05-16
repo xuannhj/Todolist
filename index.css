@@ -1,0 +1,99 @@
+/* reset lai*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------body---------------------------- */
+body {
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* full màn */
+}
+
+.container {
+    background-color: rgb(106, 143, 106);
+    width: 100%;
+    max-width: 600px;
+    /* margin: 0 auto; */
+    /* nếu dùng flex thì phải flex thằng body */
+    border-radius: 5px;
+    overflow: hidden;
+    /* nhung cai phan ria thi giau di */
+}
+
+header {
+    padding: 25px;
+    background-color: rgb(129, 129, 196);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+/* nếu không tạo class thì */
+input[type="text"] {
+    /* chỉ là input mà mình điền vào thui chứ mấy cái dưới là checkbox òi */
+     flex: 1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    /* outline la cai duong vien luc minh click vao de nhap */
+    font-size: 16px;
+    border-radius: 5px;
+    /* cho no bo tron */
+    
+} 
+
+.input-section button {
+    padding: 12px;
+    color: white;
+    background-color: rgb(60, 60, 104);
+    border: none;
+    outline: none;
+    font-weight: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-container {
+    padding: 20px;
+    
+}
+.todo-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-actions button{
+    background: none;
+    color: rgb(57, 101, 223);
+}
+
+
+    
